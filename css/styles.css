@@ -84,6 +84,7 @@ img{
 }
 
 .header-container{
+    height: 70px;
     display: flex;
     align-items: center;
 }
