@@ -266,6 +266,14 @@ img{
     height: 432px;
 }
 
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .section-one {
+            background-image: linear-gradient(90deg, rgba(46, 47, 66, 0.7035013834635417) 100%, rgba(46, 47, 66, 0.7) 100%), url(..//images/people-office-mob-2x.jpg);
+        }
+}
+
 .section-one-text {
     font-weight: 700;
     font-size: 36px;
@@ -997,6 +1005,14 @@ img{
         background-image: linear-gradient(90deg, rgba(46, 47, 66, 0.7035013834635417) 100%, rgba(46, 47, 66, 0.7) 100%), url(..//images/people-office-tab.jpg);
     }
 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .section-one {
+            background-image: linear-gradient(90deg, rgba(46, 47, 66, 0.7035013834635417) 100%, rgba(46, 47, 66, 0.7) 100%), url(..//images/people-office-tab-2x.jpg);
+        }
+    }
+
     .section-one-text{
         font-size: 56px;
         line-height: calc(60/56);
@@ -1058,7 +1074,7 @@ img{
     .subscribe-container{
         align-items: start;
         margin-left: 108px;
-}
+    }
 
     .subscribe-form { 
         display: flex;
@@ -1104,8 +1120,17 @@ img{
         padding-top: 188px;
         padding-bottom: 188px;
         background-image: linear-gradient(90deg, rgba(46, 47, 66, 0.7035013834635417) 100%, rgba(46, 47, 66, 0.7) 100%), url(..//images/people-office-desk.jpg);
-        max-width: 1440px;
+        width: 1440px;
+        height: 600px;
         margin: 0 auto;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .section-one {
+            background-image: linear-gradient(90deg, rgba(46, 47, 66, 0.7035013834635417) 100%, rgba(46, 47, 66, 0.7) 100%), url(..//images/people-office-desk-2x.jpg);
+        }
     }
     
     .section-one-text {
@@ -1201,6 +1226,10 @@ img{
     
     .social-media{
         margin-bottom: 8px;
+    }
+
+    .subscribe-form{
+        width: 453px;
     }
     
     .subscribe-container{
