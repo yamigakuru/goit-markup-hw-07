@@ -163,6 +163,7 @@ img{
 }
 
 .mobile-menu {
+    position: relative;
     position: fixed;
     top: 0;
     background-color: #FFFFFF;
@@ -177,7 +178,7 @@ img{
 }
 .mobile-menu-close {
     position: absolute;
-    left: 380px;
+    left: 264px;
     top: 24px;
     background-color: #E7E9FC;
     border-radius: 50%;
@@ -190,9 +191,6 @@ img{
     overflow: auto;
 }
 
-.mobile-menu-list {
-
-}
 .mobile-menu-item:not(:last-child) {
     margin-bottom: 40px;
 }
@@ -233,8 +231,9 @@ img{
     color: #434455;
 }
 .menu-icons-container {
+    width: 100%;
     display: flex;
-    gap: 56px;
+    gap: 30px;
 }
 .menu-social-icons {
     width: 40px;
@@ -261,7 +260,9 @@ img{
     background-image: linear-gradient(90deg, rgba(46, 47, 66, 0.7035013834635417) 100%, rgba(46, 47, 66, 0.7) 100%), url(..//images/people-office-mob.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
+    margin: 0 auto;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -306,9 +307,6 @@ img{
 }
 .section-two {
     padding: 96px 0;
-}
-
-.sec-two-items{
 }
 
 .section-two-list { 
@@ -368,7 +366,7 @@ img{
 
 .section-four {
     background: #F4F4FD;
-    padding-bottom: 128px;
+    padding-bottom: 96px;
     padding-top: 96px;
 }
 
@@ -565,7 +563,6 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin-bottom: 72px;
 }
 
@@ -965,6 +962,14 @@ img{
     .modal{
         width: 392px;
     }
+
+    .mobile-menu-close{
+        left: 380px;
+    }
+
+    .menu-icons-container{
+        gap: 56px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -978,6 +983,10 @@ img{
 
     .header{
         display: block;
+    }
+
+    .header-menu.current::after{
+        top: 52px;
     }
 
     .contacts{
@@ -1029,7 +1038,7 @@ img{
 
     .section-two-list{
         flex-direction: row;
-        gap: 24px;
+        gap: 72px 24px;
     }
 
     .section-two-text{
@@ -1062,7 +1071,11 @@ img{
     }
 
     .customers-list{
-        margin-bottom: 72px;
+        margin-bottom: 0;
+    }
+
+    .customers-icons{
+        gap: 72px 24px;
     }
 
     .footer-logo-container{
@@ -1072,14 +1085,14 @@ img{
 
     .social-container{
         align-items: start;
-        justify-content: center;
+        justify-content: start;
         margin-left: 24px;
     }
 
     .footer-container{
         display: flex;
         flex-wrap: wrap;
-        padding-left: 108px;
+        width: 582px;
     }
 
     .subscribe-container{
@@ -1115,6 +1128,10 @@ img{
     
     .address{
         font-style: normal;
+    }
+
+    .header-menu.current::after{
+        top: 42px;
     }
 
     .contacts{
@@ -1232,7 +1249,7 @@ img{
     }
 
     .social-container{
-        align-items: start;
+        display: block;
         margin-left: 120px;
         margin-bottom: 0;
     }
@@ -1253,10 +1270,12 @@ img{
     
     .subscribe-container{
         margin-left: 80px;
+        justify-content: start;
     }
     
     .subscribe-input {
         min-width: 264px;
+        margin-bottom: 0;
     }
 
     .modal{
