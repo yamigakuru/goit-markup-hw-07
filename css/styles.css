@@ -978,11 +978,12 @@ img{
 
     .header{
         display: block;
-        padding-bottom: 12px;
+        padding-bottom: 16px;
+        padding-top: 16px;
     }
 
     .header-menu.current::after{
-        top: 40px;
+        top: 44px;
     }
 
     .contacts{
@@ -1068,7 +1069,10 @@ img{
 
     .section-five{
         padding-bottom: 96px;
-        width: 582px;
+    }
+
+    .section-five-container{
+        width: 584px;
     }
 
     .customers-list{
@@ -1076,7 +1080,8 @@ img{
     }
 
     .customers-icons{
-        gap: 72px 24px;
+        column-gap: 24px;
+        row-gap: 72px;
     }
 
     .footer-logo-container{
@@ -1129,7 +1134,7 @@ img{
 
     .header{
         padding-top: 24px;
-        padding-bottom: 28px;
+        padding-bottom: 24px;
     }
     
     .header-container{
@@ -1141,7 +1146,7 @@ img{
     }
 
     .header-menu.current::after{
-        top: 46px;
+        top: 43px;
     }
 
     .contacts{
@@ -1223,8 +1228,10 @@ img{
     .section-five{
         padding-bottom: 120px;
         padding-top: 120px;
+    }
+
+    .section-five-container{
         width: 1158px;
-        margin: 0 auto;
     }
     
     .customers-icons{
